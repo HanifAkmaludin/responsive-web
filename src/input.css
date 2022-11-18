@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "Inter", "Arial", sans-serif;
+}
+
+.area-nav {
+    @apply bg-white shadow-xl px-[22px] rounded-3xl mt-6;
+}
+
+.active {
+    @apply font-bold text-[#2B2B39];
+}
+
+.navigation-aktif {
+    @apply text-white bg-primary rounded-[14px] font-semibold text-sm leading-4 tracking-[0.01em] py-[15px] px-[25px] md:text-base md:px-[30px] md:py-[13px] lg:py-[20px] lg:px-[50px];
+}
+
+.navigation-nonaktif {
+    @apply text-h3 rounded-[14px] bg-transparent font-medium text-sm leading-4 tracking-[0.01em] py-[15px] px-[25px] md:text-base md:px-[30px] md:py-[13px] lg:py-[20px] lg:px-[50px];
+}
+
+@media screen and (max-width: 360px) {
+    #members .navigation div {
+        @apply px-[15px] py-[10px];
+    }
+}

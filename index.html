@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./dist/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        />
+        <title>Document</title>
+    </head>
+    <body class="overflow-x-hidden">
+        <!-- NAVBAR -->
+        <section
+            id="navbar"
+            class="border-b border-primary/10 fixed top-0 w-full z-50"
+        >
+            <div
+                class="container flex justify-between py-[22px] box-border duration-300"
+            >
+                <div class="menu-navigation flex items-center gap-[72px]">
+                    <div class="img-box">
+                        <img src="./assets/img/logo.png" alt="" />
+                    </div>
+                    <ul class="gap-8 text-secondary font-medium hidden lg:flex">
+                        <li>
+                            <a href="#" class="active">Home</a>
+                        </li>
+                        <li>
+                            <div
+                                class="item-dropdown flex items-center gap-[5px]"
+                            >
+                                <a href="#">Community</a>
+                                <img
+                                    src="./assets/img/dropdown.png"
+                                    class="object-contain"
+                                    alt=""
+                                />
+                            </div>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="menu-action flex items-center gap-[42px]">
+                    <div
+                        class="search flex items-center gap-2 border-b border-[#E5E5E5] py-[18px]"
+                    >
+                        <img
+                            src="./assets/img/search.png"
+                            alt=""
+                            class="w-3 h-3 inline-block"
+                        />
+                        <form action="#">
+                            <input
+                                type="text"
+                                name="search"
+                                placeholder="Search Here..."
+                                class="text-xs w-20 font-normal bg-transparent focus:outline-none"
+                            />
+                        </form>
+                    </div>
+                    <div class="button-box hidden lg:flex">
+                        <button
+                            class="text-xs text-white bg-primary rounded-[14px] shadow-btn font-semibold md:px-[43px] md:py-[18px]"
+                        >
+                            Log in
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="hero"
+            class="bg-hero px-[30px] pt-[162px] pb-[50px] sm:px-0 md:pb-[82.53px] lg:pt-[162px] lg:mb-24"
+        >
+            <div
+                class="container flex flex-col md:gap-[20px] md:flex-row md:items-center lg:gap-[69px]"
+            >
+                <div
+                    class="hero-description mb-[42px] md:mb-[0] md:w-[40%] lg:w-[45%] xl:w-[50%]"
+                >
+                    <div
+                        class="badge text-primary bg-primary/10 py-3 px-[30px] inline-block rounded-lg font-medium text-xs mb-5 md:px-[25px] lg:px-[30px]"
+                    >
+                        Netbook community
+                    </div>
+                    <h1
+                        class="title font-bold text-[35px] leading-[48px] mb-[18px] lg:text-[40px] lg:leading-[56px] xl:text-[56px] xl:leading-[66px]"
+                    >
+                        Your Solutions For Community!
+                    </h1>
+                    <p
+                        class="font-normal leading-7 text-sm text-secondary pb-[42px] md:text-base lg:text-lg"
+                    >
+                        More than 2 billion people in over countries use
+                        socibook to stay in touch with friends & family.
+                    </p>
+                    <div class="action flex gap-[18px]">
+                        <a
+                            href="#"
+                            class="text-xs text-white bg-primary rounded-[14px] shadow-btn font-semibold flex items-center justify-center px-[25px] py-[15px] md:px-[15px] md:py-[15px] lg:px-[36px] lg:py-[15px] xl:px-[42px] xl:py-[24px] xl:text-sm"
+                            >About More</a
+                        >
+                        <a
+                            href="#"
+                            class="text-xs text-primary border border-primary leading-[14px] rounded-[14px] shadow-btn font-semibold flex items-center justify-center px-[20px] py-[15px] md:px-[15px] md:py-[15px] lg:px-[36px] lg:py-[15px] xl:px-[42px] xl:py-[24px] xl:text-sm"
+                            >Invite Friends</a
+                        >
+                    </div>
+                </div>
+                <div
+                    class="hero-img sm:flex sm:justify-center md:w-[60%] xl:w-[50%]"
+                >
+                    <img
+                        src="./assets/img/hero-2.png"
+                        alt="Hero"
+                        class="sm:w-[70%] md:w-full"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-[21px] px-[30px] sm:px-0">
+            <div
+                class="container flex flex-col-reverse py-[42px] box-border md:flex-row md:gap-[50px] lg:gap-[100px] lg:items-center xl:gap-[200px] lg:py-[34px]"
+            >
+                <div
+                    class="description w-full text-center md:w-[45%] md:text-start lg:[40%]"
+                >
+                    <p
+                        class="text-primary font-medium text-base mb-[10px] md:leading-[18px] md:text-lg"
+                    >
+                        Whats Netboks?
+                    </p>
+                    <h2
+                        class="font-bold text-[30px] leading-[48px] text-[#0A093D] mb-4 md:text-4xl md:leading-[48px]"
+                    >
+                        Why Join to Netbook Social Network?
+                    </h2>
+                    <p
+                        class="font-normal text-sm leading-7 text-secondary mb-9 md:text-base"
+                    >
+                        Recent surveys have indicated that small businesses
+                        recognise the need they have to connect with consumer.
+                    </p>
+                    <ul class="flex flex-col gap-[14px]">
+                        <li
+                            class="before:content-[' '] before:inline-block before:bg-bullet before:w-[18px] before:h-[18px] font-medium text-base text-[#171648] flex justify-start items-center gap-3 md:leading-[18px] md:text-md"
+                        >
+                            Groups
+                        </li>
+                        <li
+                            class="before:content-[' '] before:inline-block before:bg-bullet before:w-[18px] before:h-[18px] font-medium text-base text-[#171648] flex justify-start items-center gap-3 md:leading-[18px] md:text-md"
+                        >
+                            Messages
+                        </li>
+                        <li
+                            class="before:content-[' '] before:inline-block before:bg-bullet before:w-[18px] before:h-[18px] font-medium text-base text-[#171648] flex justify-start items-center gap-3 md:leading-[18px] md:text-md"
+                        >
+                            Share
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="about-img w-[100%] gap-[20px] flex mb-[42px] items-center sm:w-[70%] sm:mx-auto md:w-[55%] lg:w-[60%] lg:gap-[29px]"
+                >
+                    <div class="left w-1/2">
+                        <img
+                            src="./assets/img/img3.png"
+                            alt=""
+                            class="w-full"
+                        />
+                    </div>
+                    <div
+                        class="right flex flex-col gap-[20px] w-1/2 lg:gap-[32px]"
+                    >
+                        <img
+                            src="./assets/img/img2.png"
+                            alt=""
+                            class="w-full"
+                        />
+                        <img
+                            src="./assets/img/img1.png"
+                            alt=""
+                            class="w-full"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="connecting" class="px-[30px] sm:px-0">
+            <div
+                class="container flex flex-col-reverse gap-y-[38px] items-center py-[75px] xl:gap-[93px] xl:flex-row"
+            >
+                <div class="card flex flex-col gap-[24px] md:flex-row">
+                    <div
+                        class="box-border rating rounded-[14px] bg-white p-card border-2 border-[#dbdbdb] hover:shadow-card hover:border-transparent duration-300 ease-out"
+                    >
+                        <h3
+                            class="before:content-[' '] before:inline-block before:w-7 before:h-7 before:bg-[url('../assets/img/Star.png')] flex justify-start items-center gap-[10px] font-medium text-xl leading-5 text-[#0A093D] mb-[23px]"
+                        >
+                            4.8 Rating
+                        </h3>
+                        <div
+                            class="people flex gap-[7px] items-center mb-[21px]"
+                        >
+                            <img
+                                src="./assets/img/people.png"
+                                alt="people"
+                                class="ml-[-19px]"
+                            />
+                            <p
+                                class="font-semibold text-base leading-[18px] text-[#5D5B70] mt-[-5px]"
+                            >
+                                <span class="text-primary">+836k</span> Members
+                            </p>
+                        </div>
+                        <p
+                            class="font-normal text-sm leading-[26px] text-[#8c8c8c] mb-[40px] md:text-base"
+                        >
+                            More than 2 billion we people over countries use
+                            socibooks we to stay in touch with friends.
+                        </p>
+                        <div
+                            class="link font-medium text-base leading-4 text-primary flex justify-start items-center gap-2 w-[175px] h-[16px] cursor-pointer"
+                        >
+                            <a href="#">Join Our Community</a>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-[10px] h-[10px] cursor-pointer"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="awards p-card rounded-[14px] border-2 border-[#dbdbdb] hover:shadow-card hover:border-transparent duration-300 ease-out"
+                    >
+                        <h3
+                            class="before:content-[' '] before:inline-block before:w-7 before:h-7 before:bg-[url('../assets/img/Trophy.png')] flex justify-start items-center gap-[10px] text-xl font-medium leading-5 text-[#0A093D] mb-[24px]"
+                        >
+                            Awards
+                        </h3>
+                        <div
+                            class="github flex justify-start items-center mb-[24px]"
+                        >
+                            <img
+                                src="./assets/img/github.png"
+                                alt=""
+                                class="ml-[-12px]"
+                            />
+                            <p
+                                class="font-normal text-base leading-[18px] text-[#5D5B70] ml-[-2px] mt-[-7px]"
+                            >
+                                Best of
+                                <span class="text-primary">2021</span> on Github
+                            </p>
+                        </div>
+                        <p
+                            class="font-normal text-sm leading-[26px] text-[#8c8c8c] mb-[40px] md:text-base"
+                        >
+                            More than 2 billion we people over countries use
+                            socibooks we to stay in touch with friends.
+                        </p>
+                        <div
+                            class="link text-base leading-4 font-medium text-[#4A4A56] flex justify-start items-center gap-2 w-[124px] h-[16px] cursor-pointer"
+                        >
+                            <a href="#">Go To Awards </a>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-[10px] h-[10px] cursor-pointer"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="description text-center xl:text-start">
+                    <p
+                        class="text-primary font-medium text-base mb-[10px] md:leading-[18px] md:text-lg"
+                    >
+                        Our Achievement
+                    </p>
+                    <h2
+                        class="font-bold text-[30px] leading-[48px] text-[#0A093D] mb-[18px] md:text-4xl md:leading-[48px]"
+                    >
+                        We are Connecting You The Digital Life.
+                    </h2>
+                    <p
+                        class="font-normal text-sm leading-7 text-secondary mb-[38px] md:text-base md:w-[70%] md:mx-auto xl:w-full"
+                    >
+                        The scope the Social Media becomes crucial Is helps the
+                        business to directly engage with their needs and wants.
+                    </p>
+                    <div
+                        class="button mx-auto font-medium text-sm leading-[14px] tracking-[-0.02em] w-[192px] h-[58px] bg-primary rounded-[14px] text-white flex justify-center items-center gap-5 cursor-pointer xl:mx-0"
+                    >
+                        <a href="#">Discover me </a>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-4 h-4"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="bg-community px-[30px] sm:px-0">
+            <div class="container pt-[60px] pb-[126px]">
+                <div
+                    class="title text-center w-full mx-auto mb-[64px] lg:w-[50%]"
+                >
+                    <p
+                        class="text-primary font-medium text-base mb-[9px] md:leading-[18px] md:text-lg"
+                    >
+                        Our Community
+                    </p>
+                    <h2
+                        class="font-bold text-[30px] text-title mb-[19px] md:text-4xl md:leading-9"
+                    >
+                        Community Main Feature
+                    </h2>
+                    <p
+                        class="font-normal text-sm leading-7 text-secondary mx-auto md:w-[70%] md:text-base"
+                    >
+                        The wise man therefore always holds in these matters to
+                        this principle of selection.
+                    </p>
+                </div>
+                <div
+                    class="card flex gap-[44px] flex-wrap sm:justify-center md:justify-start"
+                >
+                    <div
+                        class="members bg-white flex flex-col items-center p-card-community-mobile gap-9 rounded-[14px] hover:shadow-card-community duration-300 ease-out sm:w-[70%] md:w-card lg:flex-row lg:items-start lg:p-card-community"
+                    >
+                        <div
+                            class="icon bg-card-blue w-[66px] h-[66px] rounded-3xl flex justify-center items-center shadow-card-blue"
+                        >
+                            <img src="./assets/img/members.png" alt="member" />
+                        </div>
+                        <div class="description w-full lg:w-[75%]">
+                            <h3
+                                class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center lg:text-start"
+                            >
+                                Members, Friends
+                            </h3>
+                            <p
+                                class="font-normal text-sm leading-[26px] text-secondary md:text-base"
+                            >
+                                Members, Friends Connection ( like followers ),
+                                Private Message
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="groups bg-white flex gap-9 rounded-[14px] hover:shadow-card-community duration-300 ease-out flex-col items-center p-card-community-mobile sm:w-[70%] md:w-card lg:flex-row lg:items-start lg:p-card-community"
+                    >
+                        <div
+                            class="icon bg-card-red w-[66px] h-[66px] rounded-3xl flex justify-center items-center shadow-card-red"
+                        >
+                            <img src="./assets/img/Groups.png" alt="member" />
+                        </div>
+                        <div class="description w-full lg:w-[75%]">
+                            <h3
+                                class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center lg:text-start"
+                            >
+                                Groups
+                            </h3>
+                            <p
+                                class="font-normal text-sm leading-[26px] text-secondary md:text-base"
+                            >
+                                Your users can create groups to let other users
+                                to join and talk
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="forum bg-white flex gap-9 rounded-[14px] hover:shadow-card-community duration-300 ease-out flex-col items-center p-card-community-mobile sm:w-[70%] md:w-card lg:flex-row lg:items-start lg:p-card-community"
+                    >
+                        <div
+                            class="icon bg-card-orange w-[66px] h-[66px] rounded-3xl flex justify-center items-center shadow-card-orange"
+                        >
+                            <img src="./assets/img/forums.png" alt="member" />
+                        </div>
+                        <div class="description w-full lg:w-[75%]">
+                            <h3
+                                class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center lg:text-start"
+                            >
+                                Forum
+                            </h3>
+                            <p
+                                class="font-normal text-sm leading-[26px] text-secondary md:text-base"
+                            >
+                                Forum is ready by BBPress. Your users can make
+                                topics and talk.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="custom-module bg-white flex gap-9 rounded-[14px] hover:shadow-card-community duration-300 ease-out flex-col items-center p-card-community-mobile sm:w-[70%] md:w-card lg:flex-row lg:items-start lg:p-card-community"
+                    >
+                        <div
+                            class="icon bg-card-blue w-[66px] h-[66px] rounded-3xl flex justify-center items-center shadow-card-blue"
+                        >
+                            <img
+                                src="./assets/img/custom-module.png"
+                                alt="member"
+                            />
+                        </div>
+                        <div class="description w-full lg:w-[75%]">
+                            <h3
+                                class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center lg:text-start"
+                            >
+                                Custom Module
+                            </h3>
+                            <p
+                                class="font-normal text-sm leading-[26px] text-secondary md:text-base"
+                            >
+                                You can create Members, Groups Module. We
+                                already created 3 modules. It's by drag & drop
+                                live builder.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="list-builder bg-white flex gap-9 rounded-[14px] hover:shadow-card-community duration-300 ease-out flex-col items-center p-card-community-mobile sm:w-[70%] md:w-card lg:flex-row lg:items-start lg:p-card-community"
+                    >
+                        <div
+                            class="icon bg-card-red w-[66px] h-[66px] rounded-3xl flex justify-center items-center shadow-card-red"
+                        >
+                            <img
+                                src="./assets/img/list-builder.png"
+                                alt="member"
+                            />
+                        </div>
+                        <div class="description w-full lg:w-[75%]">
+                            <h3
+                                class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center lg:text-start"
+                            >
+                                List Builder
+                            </h3>
+                            <p
+                                class="font-normal text-sm leading-[26px] text-secondary md:text-base"
+                            >
+                                Members, Groups list can be modified by drag &
+                                drop live builder.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="list-scroll bg-white flex gap-9 rounded-[14px] hover:shadow-card-community duration-300 ease-out flex-col items-center p-card-community-mobile sm:w-[70%] md:w-card lg:flex-row lg:items-start lg:p-card-community"
+                    >
+                        <div
+                            class="icon bg-card-orange w-[66px] h-[66px] rounded-3xl flex justify-center items-center shadow-card-orange"
+                        >
+                            <img
+                                src="./assets/img/list-scroll.png"
+                                alt="member"
+                            />
+                        </div>
+                        <div class="description w-full lg:w-[75%]">
+                            <h3
+                                class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center lg:text-start"
+                            >
+                                List Scroll Effects
+                            </h3>
+                            <p
+                                class="font-normal text-sm leading-[26px] text-secondary md:text-base"
+                            >
+                                8 different scroll effects are ready. You can
+                                always change by your tastes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="members" class="px-[30px] sm:px-0">
+            <div class="container pt-[37px] pb-[84px]">
+                <div class="title text-center mx-auto">
+                    <p
+                        class="text-primary font-medium text-base mb-[10px] md:leading-[18px] md:text-lg"
+                    >
+                        Valuable Team
+                    </p>
+                    <h2
+                        class="text-title font-bold text-[30px] leading-9 mb-[18px] md:text-4xl md:leading-9"
+                    >
+                        Our Active Members
+                    </h2>
+                    <p
+                        class="font-normal leading-[26px] text-secondary mx-auto mb-[38px] text-sm sm:w-[50%] md:text-base md:w-[35%]"
+                    >
+                        when an unknown printer took a galley of type and
+                        meeting fari scrambled it.
+                    </p>
+                </div>
+                <div
+                    class="navigation p-2 flex justify-between mx-auto mb-[44px] bg-primary/20 rounded-[14px] w-full sm:w-[60%] md:w-[60%] lg:w-[476px] lg:justify-start"
+                >
+                    <div class="newst navigation-nonaktif">Newst</div>
+                    <div class="popular navigation-nonaktif">Popular</div>
+                    <div class="Active navigation-aktif">Active</div>
+                </div>
+                <div
+                    class="profiles flex gap-[30px] flex-wrap justify-center lg:gap-[20px] lg:justify-between xl:gap-[30px] xl:justify-between"
+                >
+                    <div
+                        class="card-profile py-[30px] px-[45px] rounded-[14px] border-2 border-[#dbdbdb] hover:shadow-card-members hover:border-transparent duration-300 ease-out flex flex-col items-center w-full sm:w-[50%] md:w-col-2-members lg:w-col-3-members xl:w-col-4"
+                    >
+                        <img
+                            src="./assets/img/photo-1.png"
+                            alt="photo"
+                            class="w-[166px] h-[171px] mb-[29px]"
+                        />
+                        <h3
+                            class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center"
+                        >
+                            Fahim Rahman
+                        </h3>
+                        <p
+                            class="font-normal text-base leading-4 text-secondary"
+                        >
+                            @rahman
+                        </p>
+                    </div>
+                    <div
+                        class="card-profile py-[30px] px-[45px] border-2 border-[#dbdbdb] hover:shadow-card-members hover:border-transparent duration-300 ease-out rounded-[14px] flex flex-col items-center w-full sm:w-[50%] md:w-col-2-members lg:w-col-3-members xl:w-col-4"
+                    >
+                        <img
+                            src="./assets/img/photo-2.png"
+                            alt="photo"
+                            class="w-[166px] h-[171px] mb-[29px]"
+                        />
+                        <h3
+                            class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center"
+                        >
+                            Kazi Rahman
+                        </h3>
+                        <p
+                            class="font-normal text-base leading-4 text-secondary"
+                        >
+                            @Rahman
+                        </p>
+                    </div>
+                    <div
+                        class="card-profile py-[30px] px-[45px] rounded-[14px] border-2 border-[#dbdbdb] hover:shadow-card-members hover:border-transparent duration-300 ease-out flex flex-col items-center w-full sm:w-[50%] md:w-col-2-members lg:w-col-3-members xl:w-col-4"
+                    >
+                        <img
+                            src="./assets/img/photo-3.png"
+                            alt="photo"
+                            class="w-[166px] h-[171px] mb-[29px]"
+                        />
+                        <h3
+                            class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center"
+                        >
+                            Masterero Ali
+                        </h3>
+                        <p
+                            class="font-normal text-base leading-4 text-secondary"
+                        >
+                            @Master
+                        </p>
+                    </div>
+                    <div
+                        class="card-profile py-[30px] px-[45px] rounded-[14px] border-2 border-[#dbdbdb] hover:shadow-card-members hover:border-transparent duration-300 ease-out flex flex-col items-center w-full sm:w-[50%] md:w-col-2-members lg:w-col-3-members xl:w-col-4"
+                    >
+                        <img
+                            src="./assets/img/photo-4.png"
+                            alt="photo"
+                            class="w-[166px] h-[171px] mb-[29px]"
+                        />
+                        <h3
+                            class="font-semibold text-2xl leading-[26px] text-h3 mb-[14px] text-center"
+                        >
+                            Alia Karon
+                        </h3>
+                        <p
+                            class="font-normal text-base leading-4 text-secondary"
+                        >
+                            @Alia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mobile" class="bg-[#E5F0FD] mb-[96px] px-[30px] sm:px-0">
+            <div
+                class="container flex flex-col items-center pt-[70px] gap-[20px] md:flex-row md:pt-[44px] md:gap-[50px] lg:gap-[100px] xl:gap-[354px]"
+            >
+                <div
+                    class="description w-full sm:w-[70%] sm:text-center md:w-[50%] md:text-start lg:w-[50%] xl:w-[90%]"
+                >
+                    <p
+                        class="font-medium text-base leading-[18px] text-primary mb-[10px] md:text-lg"
+                    >
+                        Get Our Aplication
+                    </p>
+                    <h2
+                        class="font-bold text-[30px] leading-[48px] text-title mb-[18px] md:text-4xl md:leading-[52px]"
+                    >
+                        You Can Easily Find This App…!
+                    </h2>
+                    <p
+                        class="font-normal text-sm leading-[26px] text-secondary mb-9 md:text-base"
+                    >
+                        I say chap that’s suing lavatory chip shop gosh off his
+                        smashing boot are you taking the piss posh loo
+                        brilliant.
+                    </p>
+                    <div
+                        class="store flex items-center ml-[-22px] justify-start sm:justify-center md:justify-start"
+                    >
+                        <img
+                            src="./assets/img/app-store.png"
+                            alt="app store"
+                            class="w-[150px] lg:w-[190px]"
+                        />
+                        <img
+                            src="./assets/img/play-store.png"
+                            alt="playstore"
+                            class="w-[116px] lg:w-[145px] lg:h-[52px]"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="mobile-img flex justify-center w-[70%] md:w-[50%] lg:w-[50%] xl:w-[100%]"
+                >
+                    <img
+                        src="./assets/img/mockup-mobile-3.png   "
+                        alt="mobile mockup"
+                        class="w-full sm:w-[40%] md:w-full lg:w-[90%] xl:w-full"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="mb-[96px] px-[30px] sm:px-0">
+            <div class="container py-[34px]">
+                <div class="title text-center mb-[80px]">
+                    <p
+                        class="font-medium text-base leading-[18px] text-primary mb-[10px] md:text-lg"
+                    >
+                        Get Our Aplication
+                    </p>
+                    <h2
+                        class="font-bold text-[30px] leading-9 text-title md:text-4xl"
+                    >
+                        Latest News
+                    </h2>
+                </div>
+                <div
+                    class="card-news flex flex-wrap gap-[75px] sm:gap-[50px] lg:gap-[40px]lg:justify-between xl:justify-start xl:gap-[75px] relative before:content-[' '] before:bg-[url('../assets/img/Union.png')] before:w-[137px] before:h-[152px] before:absolute before:top-[-30px] before:left-[-60px] before:-z-[999] after:content-[' '] after:bg-[url('../assets/img/Union.png')] after:w-[137px] after:h-[152px] after:absolute after:right-[-100px] after:top-[20%] after:-z-[999]"
+                >
+                    <div
+                        class="card p-[20px] rounded-2xl w-full duration-300 ease-out hover:shadow-card-community sm:w-col-2-news lg:w-col-3-news-lg xl:w-col-3-news-xl"
+                    >
+                        <div class="card-img mb-[25px] flex justify-center">
+                            <img src="./assets/img/news1.png" alt="news" />
+                        </div>
+                        <div class="card-description flex gap-[14px]">
+                            <div class="line">
+                                <span
+                                    class="block w-[39px] h-[2px] bg-[#FFAF2E] mt-4"
+                                ></span>
+                            </div>
+                            <div class="detail">
+                                <h3
+                                    class="font-semibold text-xl leading-8 text-h3 mb-[24px]"
+                                >
+                                    It Does Not Matter Hows Slowly go as Long
+                                </h3>
+                                <div
+                                    class="link flex items-center justify-start gap-[8px]"
+                                >
+                                    <a
+                                        href="#"
+                                        class="font-normal text-base leading-4 text-secondary"
+                                        >Continue Reading</a
+                                    >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-[10px] h-[10px] cursor-pointer"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card p-[20px] rounded-2xl w-full hover:shadow-card-community duration-300 ease-out sm:w-col-2-news lg:w-col-3-news-lg xl:w-col-3-news-xl"
+                    >
+                        <div class="card-img mb-[25px] flex justify-center">
+                            <img src="./assets/img/news2.png" alt="news" />
+                        </div>
+                        <div class="card-description flex gap-[14px]">
+                            <div class="line">
+                                <span
+                                    class="block w-[39px] h-[2px] bg-[#FFAF2E] mt-4"
+                                ></span>
+                            </div>
+                            <div class="detail">
+                                <h3
+                                    class="font-semibold text-xl leading-8 text-h3 mb-[24px]"
+                                >
+                                    Netbook Network Added New Photo Filter
+                                </h3>
+                                <div
+                                    class="link flex items-center justify-start gap-[8px] text-primary"
+                                >
+                                    <a
+                                        href="#"
+                                        class="font-normal text-base leading-4 text-primary"
+                                        >Continue Reading</a
+                                    >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-[10px] h-[10px] cursor-pointer"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="card p-[20px] rounded-2xl w-full hover:shadow-card-community duration-300 ease-out sm:w-col-2-news lg:w-col-3-news-lg xl:w-col-3-news-xl"
+                    >
+                        <div class="card-img mb-[25px] flex justify-center">
+                            <img src="./assets/img/news3.png" alt="news" />
+                        </div>
+                        <div class="card-description flex gap-[14px]">
+                            <div class="line">
+                                <span
+                                    class="block w-[39px] h-[2px] bg-[#FFAF2E] mt-4"
+                                ></span>
+                            </div>
+                            <div class="detail">
+                                <h3
+                                    class="font-semibold text-xl leading-8 text-h3 mb-[24px]"
+                                >
+                                    We Optimised Netbooks Better Navigation
+                                </h3>
+                                <div
+                                    class="link flex items-center justify-start gap-[8px]"
+                                >
+                                    <a
+                                        href="#"
+                                        class="font-normal text-base leading-4 text-secondary"
+                                        >Continue Reading</a
+                                    >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-[10px] h-[10px] cursor-pointer"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe" class="bg-[#2B2B39] px-[30px] sm:px-0">
+            <div
+                class="container flex pt-[78px] gap-[40px] pb-[78px] xl:pb-0 sm:gap-[20px] lg:gap-[20px] xl:gap-[100px] justify-between flex-col xl:flex-row sm:items-center xl:items-start"
+            >
+                <div
+                    class="navigation flex sm:gap-[80px] gap-[40px] mb-[85px] flex-col sm:flex-row"
+                >
+                    <div class="link">
+                        <ul
+                            class="font-normal text-base leading-[46px] tracking-[0.0125em] text-[#E7E7E7]"
+                        >
+                            <li
+                                class="text-white font-medium text-xl leading-5 mb-[22px]"
+                            >
+                                Home
+                            </li>
+                            <li>Home</li>
+                            <li>Community</li>
+                            <li>Events</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div class="resource">
+                        <ul
+                            class="font-normal text-base leading-[46px] tracking-[0.0125em] text-[#E7E7E7]"
+                        >
+                            <li
+                                class="text-white font-medium text-xl leading-5 mb-[22px]"
+                            >
+                                Resources
+                            </li>
+                            <li>Blog</li>
+                            <li>News</li>
+                            <li>Guides</li>
+                            <li>Help Center</li>
+                        </ul>
+                    </div>
+                    <div class="community">
+                        <ul
+                            class="font-normal text-base leading-[46px] tracking-[0.0125em] text-[#E7E7E7]"
+                        >
+                            <li
+                                class="text-white font-medium text-xl leading-5 mb-[22px]"
+                            >
+                                Community
+                            </li>
+                            <li>NewsFood</li>
+                            <li>Profile</li>
+                            <li>Friends</li>
+                            <li>Forums</li>
+                        </ul>
+                    </div>
+                    <div class="main-links">
+                        <ul
+                            class="font-normal text-base leading-[46px] tracking-[0.0125em] text-[#E7E7E7]"
+                        >
+                            <li
+                                class="text-white font-medium text-xl leading-5 mb-[22px]"
+                            >
+                                Main Links
+                            </li>
+                            <li>Members</li>
+                            <li>Activity</li>
+                            <li>Groups</li>
+                            <li>Private Group</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="subscribe w-full text-center sm:w-[70%] lg:w-[60%] xl:w-[30%] lg:mx-auto xl:text-start xl:mx-0"
+                >
+                    <h4
+                        class="font-medium text-xl leading-8 w-full text-white mb-[18px] xl:w-[50%] mt-[-7px]"
+                    >
+                        Subscribe Cirkle Newsletter
+                    </h4>
+                    <p
+                        class="font-normal text-base leading-7 text-[#e7e7e7] w-full mb-[32px] xl:w-[80%]"
+                    >
+                        Subscribe to be the first one to know about updates.
+                        Enter your email
+                    </p>
+                    <div class="button border border-white rounded-xl">
+                        <form action="#" class="flex justify-between">
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="Email Address"
+                                class="font-normal text-sm leading-3 tracking-[0.0125em] text-[#717179] placeholder:text-[#717179] py-[18px] px-[24px] rounded-xl bg-transparent w-[60%] focus:outline-none"
+                            />
+                            <button
+                                class="py-4 px-6 bg-white rounded-xl font-medium text-xs md:text-base leading-4 text-[#2B2B39] w-[40%]"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer" class="bg-[#20202D] px-[30px] sm:px-0">
+            <div
+                class="container flex justify-between items-center py-[30px] flex-col-reverse gap-y-[25px] sm:flex-row"
+            >
+                <p class="font-normal text-sm leading-[14px] text-[#f6f6f6]">
+                    Besnik Creative Agency.
+                </p>
+                <div class="footer-img">
+                    <img src="./assets/img/logo-footer.png" alt="logo" />
+                </div>
+                <div class="sosmed flex gap-2">
+                    <div
+                        class="twitter w-9 h-9 bg-white flex justify-center items-center rounded-full"
+                    >
+                        <i
+                            class="fa-brands fa-twitter text-[22px] text-[#20202D]"
+                        ></i>
+                    </div>
+                    <div
+                        class="instagram w-9 h-9 bg-white flex justify-center items-center rounded-full"
+                    >
+                        <i
+                            class="fa-brands fa-instagram text-[22px] text-[#20202D]"
+                        ></i>
+                    </div>
+                    <div
+                        class="facebook w-9 h-9 bg-white flex justify-center items-center rounded-full"
+                    >
+                        <i
+                            class="fa-brands fa-facebook-f text-[22px] text-[#20202D]"
+                        ></i>
+                    </div>
+                    <div
+                        class="linkedin w-9 h-9 bg-white flex justify-center items-center rounded-full"
+                    >
+                        <i
+                            class="fa-brands fa-linkedin-in text-[22px] text-[#20202D]"
+                        ></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
